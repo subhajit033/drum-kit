@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgreen;
+}
+
+.drum-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 27px;
+}
+
+.main-container h1 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    transform: translateY(-40px);
+    letter-spacing: 4px;
+    text-shadow: 2px 4px 6px black;
+    color: white;
+    font-weight: bold;
+}
+
+.btn {
+    /* border: 1px solid black; */
+    width: 11rem;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+    font-size: 1.5rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 6px 1px #FFA500, -2px -2px 6px 1px #FF0000;
+    cursor: pointer;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.btn:hover {
+    color: chartreuse;
+}
+
+/* .btn:active{
+    background-size: 115%;
+} */
+.btn:nth-child(1) {
+    background-image: url(images/snare.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.btn:nth-child(1):active {
+    background-size: 120%;
+}
+
+.btn:nth-child(2) {
+    background-image: url(images/kick.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.btn:nth-child(2):active {
+    background-size: 90%;
+}
+
+.btn:nth-child(3) {
+    background-image: url(images/crash.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.btn:nth-child(3):active {
+    background-size: 130%;
+}
+
+.btn:nth-child(4) {
+    background-image: url(images/tom.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+}
+
+.btn:nth-child(4):active {
+    background-size: 90%;
+}
